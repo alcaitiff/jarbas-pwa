@@ -1,32 +1,30 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div @click="startInput" @focus="startInput" id="app">
+    <jarbas />
   </div>
 </template>
 
+<script>
+import Jarbas from './components/Jarbas';
+
+export default {
+  name: 'App',
+
+  components: {
+    Jarbas
+  },
+  methods: {
+    startInput() {
+      document.getElementById('jarbasInput').focus();
+    }
+  },
+  data: () => ({
+  })
+};
+</script>
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+  margin-left: 5vh;
+  margin-right: 5vh;
 }
 </style>
