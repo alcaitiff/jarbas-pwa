@@ -1,0 +1,9 @@
+{
+  "greetings": {
+    "GOOD_DAY": "Tenha um bom dia!",
+    "GOOD_MORNING": "Bom dia!",
+    "GOOD_AFTERNOON": "Boa tarde!",
+    "GOOD_EVENING": "Boa noite!",
+    "GOOD_NIGHT": "Tenha uma boa noite!"
+  }
+}
