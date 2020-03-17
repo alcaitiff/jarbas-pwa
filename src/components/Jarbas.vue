@@ -19,7 +19,7 @@ export default {
   methods: {
     receive(v) {
       this.v += '<br>' + v;
-      this.$store.dispatch(types.SAY, { value: v });
+      this.$store.dispatch(types.PROCESS, { value: v, callback: (v) => console.log(v) });
     }
   },
   data: () => ({
